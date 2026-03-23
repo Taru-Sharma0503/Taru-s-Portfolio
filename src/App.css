@@ -1,0 +1,115 @@
+/* App-level layout */
+.app {
+  min-height: 100vh;
+  position: relative;
+}
+ 
+/* Noise texture overlay */
+.app::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1000;
+  opacity: 0.35;
+}
+ 
+/* Ambient glow blobs */
+.ambient-blob {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(120px);
+  pointer-events: none;
+  z-index: 0;
+  animation: float 8s ease-in-out infinite;
+}
+ 
+.ambient-blob-1 {
+  width: 500px; height: 500px;
+  background: radial-gradient(circle, rgba(200,169,110,0.06) 0%, transparent 70%);
+  top: -100px; right: -100px;
+  animation-delay: 0s;
+}
+ 
+.ambient-blob-2 {
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(124,107,255,0.07) 0%, transparent 70%);
+  bottom: 10%; left: -100px;
+  animation-delay: -4s;
+}
+ 
+.page-content {
+  position: relative;
+  z-index: 1;
+}
+ 
+ 
+/* ============================================================
+   FILE: src/components/SectionWrapper.css
+============================================================ */
+.section-wrapper {
+  padding: 7rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s var(--ease-smooth), transform 0.8s var(--ease-smooth);
+}
+ 
+.section-wrapper.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+ 
+/* Shared Section Heading */
+.section-heading {
+  margin-bottom: 4rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 2rem;
+}
+ 
+.section-heading-left { flex: 1; }
+ 
+.section-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+}
+ 
+.section-label::before {
+  content: '';
+  display: block;
+  width: 24px; height: 1px;
+  background: var(--accent);
+  flex-shrink: 0;
+}
+ 
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  color: var(--text);
+  line-height: 1.1;
+}
+ 
+.section-title em {
+  color: transparent;
+  -webkit-text-stroke: 1px var(--accent);
+  font-style: normal;
+}
+ 
+.section-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+  margin-bottom: 0.5rem;
+}

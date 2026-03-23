@@ -1,0 +1,132 @@
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+ 
+.edu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2rem 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s var(--ease-smooth);
+}
+ 
+.edu-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), transparent);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s var(--ease-smooth);
+}
+ 
+.edu-card:hover {
+  border-color: rgba(200,169,110,0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+ 
+.edu-card:hover::after { transform: scaleX(1); }
+ 
+.edu-card-current {
+  border-color: rgba(200,169,110,0.25);
+}
+ 
+.edu-current-badge {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bg);
+  background: var(--accent);
+  padding: 3px 8px;
+  border-radius: 2px;
+}
+ 
+.edu-icon-wrap {
+  width: 44px; height: 44px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+ 
+.edu-body { flex: 1; }
+ 
+.edu-period {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
+ 
+.edu-degree {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+ 
+.edu-institution {
+  font-size: 0.875rem;
+  color: var(--text-dim);
+  font-weight: 500;
+}
+ 
+.edu-location {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+ 
+.edu-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 1rem;
+}
+ 
+.edu-grade-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+ 
+.edu-grade-label {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+ 
+.edu-grade {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+ 
+/* Responsive */
+@media (max-width: 860px) {
+  .edu-grid { grid-template-columns: repeat(2, 1fr); }
+}
+ 
+@media (max-width: 540px) {
+  .edu-grid { grid-template-columns: 1fr; }
+}
