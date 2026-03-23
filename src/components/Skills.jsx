@@ -8,8 +8,8 @@ const skillGroups = [
     icon: '{ }',
     skills: [
       { name: 'Python',     level: 85 },
-      { name: 'Java',       level: 65 },
-      { name: 'C',          level: 60 },
+      { name: 'Java',       level: 80 },
+      { name: 'C',          level: 85 },
     ],
   },
   {
@@ -18,24 +18,24 @@ const skillGroups = [
     skills: [
       { name: 'HTML',       level: 90 },
       { name: 'CSS',        level: 85 },
-      { name: 'JavaScript', level: 75 },
+      { name: 'JavaScript', level: 80 },
     ],
   },
   {
     category: 'Frameworks',
     icon: '⚙',
     skills: [
-      { name: 'React', level: 70 },
+      { name: 'React', level: 85 },
     ],
   },
   {
     category: 'Tools & CS',
     icon: '◈',
     skills: [
-      { name: 'Git / GitHub', level: 78 },
+      { name: 'Git / GitHub', level: 85 },
       { name: 'VS Code',      level: 90 },
       { name: 'OOP',          level: 80 },
-      { name: 'Basic DSA',    level: 65 },
+      { name: 'Basic DSA',    level: 70 },
     ],
   },
 ];
