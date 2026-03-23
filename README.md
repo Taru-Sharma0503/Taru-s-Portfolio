@@ -1,12 +1,7 @@
 # Taru Sharma — Personal Portfolio
 
-> A dark, editorial-style personal portfolio built with **React + Vite** — featuring custom animations, scroll-reveal effects, and a refined design system.
-
----
-
 ## 🖥️ Live Preview
-
-Portfolio of **Taru Sharma** — B.Tech CSE Student, Python Developer & Web Developer based in Ghaziabad, UP.
+https://taru-s-portfolio.vercel.app/
 
 ---
 
@@ -149,27 +144,13 @@ npm run preview
 | # | Section | Component | Description |
 |---|---|---|---|
 | — | Hero | `Hero.jsx` | Full-viewport opener with animated title |
-| 01 | About | `About.jsx` | Bio, quick links, stats (GPA, projects, internships) |
+| 01 | About | `About.jsx` | Bio, quick links, stats (CGPA, projects, internships) |
 | 02 | Skills | `Skills.jsx` | Skill bars (Languages, Web, Frameworks, Tools) + Soft skills |
 | 03 | Experience | `Experience.jsx` | InternPe & CodVeda internship timeline |
 | 04 | Projects | `Projects.jsx` | Flavour Loft, Weather API, File Encryption Tool |
-| 05 | Education | `Education.jsx` | KIET B.Tech, Class XII (94.25%), Class X (96.8%) |
+| 05 | Education | `Education.jsx` | KIET B.Tech|
 | 06 | Certifications | `Certifications.jsx` | Infosys, HackerRank certs + debate achievements |
-| 07 | Contact | `Contact.jsx` | Email copy button, GitHub, LinkedIn, Phone |
-
----
-
-## 🌐 Deployment
-
-This project is a standard Vite SPA and can be deployed to any static host.
-
-**Recommended platforms:**
-
-- [Vercel](https://vercel.com) — `vercel deploy`
-- [Netlify](https://netlify.com) — Drag & drop `dist/` folder
-- [GitHub Pages](https://pages.github.com) — Use `gh-pages` branch with `vite.config.js` `base` option
-
-> For GitHub Pages, set `base: '/your-repo-name/'` in `vite.config.js`.
+| 07 | Contact | `Contact.jsx` | Email copy button, GitHub, LinkedIn|
 
 ---
 
@@ -179,7 +160,6 @@ This project is a standard Vite SPA and can be deployed to any static host.
 - 📧 [ps9667279@gmail.com](mailto:ps9667279@gmail.com)
 - 💼 [linkedin.com/in/taru-sharma](https://linkedin.com/in/taru-sharma)
 - 🐙 [github.com/Taru-Sharma0503](https://github.com/Taru-Sharma0503)
-- 📞 +91-9211982902
 
 ---
 
