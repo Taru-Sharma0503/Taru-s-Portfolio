@@ -69,20 +69,21 @@ https://taru-s-portfolio.vercel.app/
 
 | Token | Value | Usage |
 |---|---|---|
-| `--bg` | `#0a0a0f` | Page background |
-| `--bg-2` | `#0f0f18` | Subtle surface variant |
-| `--bg-card` | `#13131f` | Card / panel backgrounds |
-| `--accent` | `#c8a96e` | Gold — primary accent |
-| `--accent-2` | `#7c6bff` | Purple — secondary accent |
-| `--text` | `#e8e4d9` | Primary text |
-| `--text-dim` | `#a09b8e` | Body copy |
-| `--text-muted` | `#6e6a60` | Labels, captions |
-| `--border` | `rgba(255,255,255,0.07)` | Subtle borders |
-| `--font-display` | `Playfair Display` | Headings, serif |
-| `--font-mono` | `DM Mono` | Labels, tags, code |
+| `--bg` | `#1e2230` | Main background |
+| `--bg-2` | `#252a3a` | Section contrast |
+| `--bg-card` | `#2c3145` | Cards / panels |
+| `--border` | `rgba(255, 255, 255, 0.08)` | Subtle borders |
+| `--accent` | `#7c7cff` | Primary accent (soft indigo) |
+| `--accent-2` | `#22c1c3` | Secondary accent (cyan) |
+| `--accent-glow` | `rgba(124, 124, 255, 0.15)` | Accent glow effect |
+| `--text` | `#f1f3f8` | Primary text |
+| `--text-muted` | `#b0b6c3` | Secondary text |
+| `--text-dim` | `#7f8596` | Low emphasis text |
+| `--font-display` | `Playfair Display` | Headings (serif) |
+| `--font-mono` | `DM Mono` | Code / labels |
 | `--font-body` | `Cabinet Grotesk` | Body text |
-| `--ease-bounce` | `cubic-bezier(0.34, 1.56, 0.64, 1)` | Spring-like bounce |
-| `--ease-smooth` | `cubic-bezier(0.25, 0.46, 0.45, 0.94)` | Smooth deceleration |
+| `--ease-bounce` | `cubic-bezier(0.34, 1.56, 0.64, 1)` | Spring-like motion |
+| `--ease-smooth` | `cubic-bezier(0.25, 0.46, 0.45, 0.94)` | Smooth transitions |
 
 ---
 
@@ -106,8 +107,6 @@ npm install
 # 3. Start the development server
 npm run dev
 ```
-
-The app will be available at **http://localhost:5173**
 
 ### Build for Production
 
