@@ -5,6 +5,22 @@ import "./Projects.css";
 const projects = [
   {
     number: "01",
+    title: "StudyMate",
+    subtitle: "Student Companion Website",
+    description:
+      "Developed a responsive student productivity web application using React, designed to streamline academic workflows. Implemented features like task management, study tracking, and resource organization with a focus on intuitive UI/UX.",
+    stack: ["HTML", "CSS", "JavaScript","React"],
+    highlights: [
+      "Developed a student productivity web app using React to manage tasks, study schedules, and academic resources.",
+      "Implemented authentication and protected routes for secure user access.",
+      "Designed a clean and intuitive UI/UX focused on usability and structured workflows.",
+    ],
+    accent: "#4ade80",
+    icon: "🍽",
+    projectLink: "https://github.com/Taru-Sharma0503/StudyMate-Student-Companion",
+  },
+  {
+    number: "02",
     title: "Flavour Loft",
     subtitle: "Fictional Restaurant Website",
     description:
@@ -20,7 +36,7 @@ const projects = [
     projectLink: "https://taru-sharma0503.github.io/Restaurant-Webpage-Design/",
   },
   {
-    number: "02",
+   number: "03",
     title: "Weather API Integration",
     subtitle: "Real-Time Weather Web App",
     description:
@@ -34,23 +50,6 @@ const projects = [
     accent: "#7c6bff",
     icon: "🌤",
     projectLink: "https://taru-sharma0503.github.io/API-Integration/",
-  },
-  {
-    number: "03",
-    title: "File Encryption / Decryption Tool",
-    subtitle: "Python Security Utility",
-    description:
-      "A Caesar Cipher-based encryption and decryption tool built in Python. Allows users to encrypt or decrypt any text file and saves the output as a new file, demonstrating solid Python file-handling fundamentals.",
-    stack: ["Python", "File Handling"],
-    highlights: [
-      "Caesar Cipher algorithm implementation",
-      "Reads input & writes encrypted/decrypted output files",
-      "Clean CLI interface for easy use",
-    ],
-    accent: "#4ade80",
-    icon: "🔐",
-    projectLink:
-      "https://github.com/Taru-Sharma0503/File-encryption-and-decryption",
   },
 ];
 
