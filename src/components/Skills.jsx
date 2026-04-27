@@ -13,19 +13,22 @@ const skillGroups = [
     ],
   },
   {
-    category: 'Web',
+    category: 'Frontend',
     icon: '</>',
     skills: [
       { name: 'HTML',       level: 90 },
       { name: 'CSS',        level: 85 },
       { name: 'JavaScript', level: 80 },
+      { name: 'React', level: 75 },
     ],
   },
   {
-    category: 'Frameworks',
+    category: 'Backend',
     icon: '⚙',
     skills: [
-      { name: 'React', level: 85 },
+      { name: 'Node.js', level: 85 },
+      { name: 'Express', level: 80 },
+      { name: 'MongoDB', level: 75 },
     ],
   },
   {
@@ -35,7 +38,7 @@ const skillGroups = [
       { name: 'Git / GitHub', level: 85 },
       { name: 'VS Code',      level: 90 },
       { name: 'OOP',          level: 80 },
-      { name: 'Basic DSA',    level: 70 },
+      { name: 'DSA',    level: 70 },
     ],
   },
 ];
