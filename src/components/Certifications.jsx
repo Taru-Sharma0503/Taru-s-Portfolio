@@ -3,21 +3,21 @@ import './Certifications.css';
 
 const certifications = [
   {
-    title: 'Introduction to Data Science',
+    title: 'HTML Certificate',
     issuer: 'Infosys',
     icon: '📊',
     color: '#c8a96e',
   },
   {
-    title: 'Python (Intermediate)',
-    issuer: 'HackerRank',
-    icon: '🐍',
+    title: 'CSS Certificate',
+    issuer: 'Infosys',
+    icon: '🎨',
     color: '#7c6bff',
   },
   {
-    title: 'Java (Basic)',
-    issuer: 'HackerRank',
-    icon: '☕',
+    title: 'JavaScript Certificate',
+    issuer: 'Infosys',
+    icon: '⚡',
     color: '#4ade80',
   },
 ];
