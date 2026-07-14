@@ -7,7 +7,7 @@ const education = [
     institution: 'Krishna Institute of Engineering Technology (KIET)',
     location: 'Ghaziabad, UP',
     period: '2025 – 2029',
-    grade: 'CGPA: 9.18',
+    grade: 'CGPA: 8.96',
     current: true,
     icon: '🎓',
   },

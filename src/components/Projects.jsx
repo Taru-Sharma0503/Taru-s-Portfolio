@@ -6,18 +6,19 @@ const projects = [
   {
     number: "01",
     title: "StudyMate",
-    subtitle: "Student Companion Website",
+    subtitle: "AI Student Companion Website",
     description:
-      "Developed a responsive student productivity web application using React, designed to streamline academic workflows. Implemented features like task management, study tracking, and resource organization with a focus on intuitive UI/UX.",
-    stack: ["HTML", "CSS", "JavaScript","React"],
+      "Developed a responsive student productivity web application using React, designed to streamline academic workflows. Implemented features like task management, AI assisstant, and resource organization with a focus on intuitive UI/UX.",
+    stack: ["React","Node.js", "Express.js", "MongoDB","JWT","Gemini API"],
     highlights: [
-      "Developed a student productivity web app using React to manage tasks, study schedules, and academic resources.",
-      "Implemented authentication and protected routes for secure user access.",
-      "Designed a clean and intuitive UI/UX focused on usability and structured workflows.",
+      "Engineered a full-stack study management web application with complete CRUD functionality for notes and tasks, using React on the frontend and Node.js/Express.js/MongoDB on the backend.",
+      "Implemented secure JWT-based authentication and protected routes to safeguard user data and restrict unauthorized access.",
+      "Integrated Google’s Gemini API to build an AI-powered study assistant that answers academic queries in real time",
+      "Added file upload support and deployed the application in production, hosting the frontend on Vercel and the backend on Render."
     ],
     accent: "#4ade80",
     icon: "🍽",
-    projectLink: "https://github.com/Taru-Sharma0503/StudyMate-Student-Companion",
+    projectLink: "https://studymate-umber-eta.vercel.app/",
   },
   {
     number: "02",
