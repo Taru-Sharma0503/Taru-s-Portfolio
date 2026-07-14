@@ -5,7 +5,7 @@ const stats = [
   { value: '2+', label: 'Internships'    },
   { value: '3+', label: 'Projects Built' },
   { value: '2+', label: 'Hackathons' },
-  { value: '100+', label: 'Leetcode problems solved' },
+  { value: '300+', label: 'Leetcode problems solved' },
 ];
 
 const GitHubIcon = () => (

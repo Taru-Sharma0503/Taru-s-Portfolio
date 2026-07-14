@@ -1,55 +1,60 @@
-import { useState } from 'react';
-import SectionWrapper from './SectionWrapper';
-import './Skills.css';
+import { useState } from "react";
+import SectionWrapper from "./SectionWrapper";
+import "./Skills.css";
 
 const skillGroups = [
   {
-    category: 'Languages',
-    icon: '{ }',
+    category: "Languages",
+    icon: "{ }",
     skills: [
-      { name: 'Python',     level: 85 },
-      { name: 'Java',       level: 80 },
-      { name: 'C',          level: 85 },
+      { name: "Python", level: 85 },
+      { name: "Java", level: 80 },
+      { name: "C", level: 85 },
+      { name: "JavaScript", level: 85 },
+      { name: "HTML", level: 90 },
+      { name: "CSS", level: 90 },
     ],
   },
   {
-    category: 'Frontend',
-    icon: '</>',
+    category: "Frontend",
+    icon: "</>",
     skills: [
-      { name: 'HTML',       level: 90 },
-      { name: 'CSS',        level: 85 },
-      { name: 'JavaScript', level: 80 },
-      { name: 'React', level: 75 },
+      { name: "React", level: 75 },
+      { name: "Responsive Web Design", level: 90 },
+      { name: "DOM Manipulation", level: 85 },
     ],
   },
   {
-    category: 'Backend',
-    icon: '⚙',
+    category: "Backend",
+    icon: "⚙",
     skills: [
-      { name: 'Node.js', level: 85 },
-      { name: 'Express', level: 80 },
-      { name: 'MongoDB', level: 75 },
+      { name: "Node.js", level: 85 },
+      { name: "Express", level: 80 },
+      { name: "MongoDB", level: 75 },
+      { name: "JWT Authentication", level: 90 },
     ],
   },
   {
-    category: 'Tools & CS',
-    icon: '◈',
+    category: "Tools & CS",
+    icon: "◈",
     skills: [
-      { name: 'Git / GitHub', level: 85 },
-      { name: 'VS Code',      level: 90 },
-      { name: 'OOP',          level: 80 },
-      { name: 'DSA',    level: 70 },
+      { name: "Git / GitHub", level: 85 },
+      { name: "VS Code", level: 90 },
+      { name: "Vercel", level: 90 },
+      { name: "Render", level: 90 },
+      { name: "OOP", level: 80 },
+      { name: "DSA", level: 70 },
     ],
   },
 ];
 
 const softSkills = [
-  'Communication',
-  'Problem-Solving',
-  'Teamwork',
-  'Public Speaking',
-  'Anchoring',
-  'Debate',
+  "Communication",
+  "Problem-Solving",
+  "Teamwork",
+  "Public Speaking",
+  "Anchoring",
+  "Debate",
 ];
 
 export default function Skills() {
@@ -60,14 +65,20 @@ export default function Skills() {
       <div className="section-heading">
         <div className="section-heading-left">
           <p className="section-label">02 — Skills</p>
-          <h2 className="section-title">What I <em>Know</em></h2>
+          <h2 className="section-title">
+            What I <em>Know</em>
+          </h2>
         </div>
         <div className="section-line" />
       </div>
 
       <div className="skills-grid">
         {skillGroups.map((group, gi) => (
-          <div key={group.category} className="skill-group" style={{ animationDelay: `${gi * 0.1}s` }}>
+          <div
+            key={group.category}
+            className="skill-group"
+            style={{ animationDelay: `${gi * 0.1}s` }}
+          >
             <div className="skill-group-header">
               <span className="skill-group-icon">{group.icon}</span>
               <h3 className="skill-group-title">{group.category}</h3>
@@ -78,7 +89,7 @@ export default function Skills() {
                 return (
                   <div
                     key={skill.name}
-                    className={`skill-bar-wrap${hoveredSkill === key ? ' hovered' : ''}`}
+                    className={`skill-bar-wrap${hoveredSkill === key ? " hovered" : ""}`}
                     onMouseEnter={() => setHoveredSkill(key)}
                     onMouseLeave={() => setHoveredSkill(null)}
                   >
@@ -90,7 +101,7 @@ export default function Skills() {
                       <div
                         className="skill-fill"
                         style={{
-                          '--pct': `${skill.level}%`,
+                          "--pct": `${skill.level}%`,
                           animationDelay: `${(gi + si) * 0.12}s`,
                         }}
                       />
@@ -108,7 +119,11 @@ export default function Skills() {
         <p className="soft-skills-label">Soft Skills</p>
         <div className="soft-skills-list">
           {softSkills.map((s, i) => (
-            <span key={s} className="soft-tag" style={{ animationDelay: `${i * 0.08}s` }}>
+            <span
+              key={s}
+              className="soft-tag"
+              style={{ animationDelay: `${i * 0.08}s` }}
+            >
               <span className="soft-tag-dot" />
               {s}
             </span>
