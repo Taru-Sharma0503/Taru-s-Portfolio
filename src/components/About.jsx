@@ -1,11 +1,11 @@
-import SectionWrapper from './SectionWrapper';
-import './About.css';
+import SectionWrapper from "./SectionWrapper";
+import "./About.css";
 
 const stats = [
-  { value: '2+', label: 'Internships'    },
-  { value: '3+', label: 'Projects Built' },
-  { value: '2+', label: 'Hackathons' },
-  { value: '300+', label: 'Leetcode problems solved' },
+  { value: "2+", label: "Open Source Contributions" },
+  { value: "3+", label: "Projects Built" },
+  { value: "2+", label: "Hackathons" },
+  { value: "500+", label: "Leetcode problems solved" },
 ];
 
 const GitHubIcon = () => (
@@ -21,9 +21,45 @@ const LinkedInIcon = () => (
 );
 
 const EmailIcon = () => (
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="about-link-icon">
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    className="about-link-icon"
+  >
     <rect x="2" y="4" width="20" height="16" rx="2" />
     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+  </svg>
+);
+
+const LeetCodeIcon = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="about-link-icon"
+  >
+    <path
+      d="M16.5 2.5L9 10.5C7.5 12 7.5 14 9 15.5L16.5 23"
+      stroke="#FFA116"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M12 7L7 12L12 17"
+      stroke="#000000"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+    <path
+      d="M10 12H21"
+      stroke="#FFA116"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+    />
   </svg>
 );
 
@@ -33,7 +69,9 @@ export default function About() {
       <div className="section-heading">
         <div className="section-heading-left">
           <p className="section-label">01 — About Me</p>
-          <h2 className="section-title">Who I <em>Am</em></h2>
+          <h2 className="section-title">
+            Who I <em>Am</em>
+          </h2>
         </div>
         <div className="section-line" />
       </div>
@@ -47,7 +85,10 @@ export default function About() {
             <div className="avatar-ring avatar-ring-2" />
           </div>
           <div className="avatar-accent">
-            <span className="font-mono" style={{ fontSize: '0.65rem', color: 'var(--accent)' }}>
+            <span
+              className="font-mono"
+              style={{ fontSize: "0.65rem", color: "var(--accent)" }}
+            >
               B.Tech CSE '29
             </span>
           </div>
@@ -56,33 +97,50 @@ export default function About() {
         {/* Bio */}
         <div className="about-bio">
           <p className="about-text">
-            Hey there! I'm <strong>Taru Sharma</strong>, a first-year Computer Science Engineering
-            student at <strong>KIET, Ghaziabad</strong>. I'm passionate about crafting responsive
-            web experiences and building practical Python tools that solve real problems.
+            Hey! I'm <strong>Taru Sharma</strong>, a B.Tech Computer Science
+            Engineering student at <strong>KIET, Ghaziabad (2029 batch)</strong>
+            , passionate about software development, problem-solving, and
+            building technology that solves real-world challenges.
+            From developing full-stack applications to exploring real-time
+            systems and AI-powered solutions, I love turning ideas into
+            functional products and learning something new with every project.
           </p>
+
           <p className="about-text">
-            With hands-on internship experience at <strong>InternPe</strong> and <strong>CodVeda</strong>,
-            I've sharpened my coding, debugging, and problem-solving skills. I love exploring
-            new technologies — from automating tasks with BeautifulSoup to building visually
-            rich web apps with REST APIs.
-          </p>
-          <p className="about-text">
-            Beyond code, I'm an <strong>active public speaker</strong>, debater, and anchor —
-            a <em>Best Team Award</em> winner at an Inter-School Debate Competition.
+            Problem-solving is another big part of my journey. I've solved{" "}
+            <strong>500+ DSA problems on LeetCode</strong>, completed structured
+            DSA roadmaps, and actively work on strengthening my algorithmic
+            thinking and analytical skills.I'm constantly exploring, building, and challenging myself, with the
+            goal of growing into a well-rounded{" "}
+            <strong>Software Engineer</strong>.
           </p>
 
           <div className="about-links">
-            <a href="https://github.com/Taru-Sharma0503" target="_blank" rel="noreferrer" className="about-link">
+            <a
+              href="https://github.com/Taru-Sharma0503"
+              target="_blank"
+              rel="noreferrer"
+              className="about-link"
+            >
               <GitHubIcon />
               GitHub
             </a>
-            <a href="https://www.linkedin.com/in/taru-sharma-304b98381" target="_blank" rel="noreferrer" className="about-link">
+            <a
+              href="https://www.linkedin.com/in/taru-sharma-304b98381"
+              target="_blank"
+              rel="noreferrer"
+              className="about-link"
+            >
               <LinkedInIcon />
               LinkedIn
             </a>
             <a href="mailto:ps9667279@gmail.com" className="about-link">
               <EmailIcon />
               Email
+            </a>
+            <a href="https://leetcode.com/u/WJhnAQhNvZ/" className="about-link">
+              <LeetCodeIcon />
+              LeetCode
             </a>
           </div>
         </div>
@@ -91,7 +149,11 @@ export default function About() {
       {/* Stats */}
       <div className="stats-grid">
         {stats.map(({ value, label }, i) => (
-          <div key={label} className="stat-card" style={{ animationDelay: `${i * 0.1}s` }}>
+          <div
+            key={label}
+            className="stat-card"
+            style={{ animationDelay: `${i * 0.1}s` }}
+          >
             <span className="stat-value">{value}</span>
             <span className="stat-label">{label}</span>
           </div>

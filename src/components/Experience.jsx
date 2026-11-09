@@ -3,25 +3,13 @@ import './Experience.css';
 
 const experiences = [
   {
-    role: 'Python Intern',
-    company: 'InternPe',
-    period: 'Dec 2025 – Jan 2026',
-    type: 'Internship',
+    role: 'Open Source Contributor',
+    company: 'GSSoC',
+    period: 'May 2026 – June 2026',
+    type: 'Open Source Contribution',
     bullets: [
-      'Developed Python-based mini projects to solve real-world problems.',
-      'Improved coding and debugging skills through iterative development.',
-      'Worked on real-time problem statements under guidance.',
-    ],
-  },
-  {
-    role: 'Python Intern',
-    company: 'CodVeda',
-    period: 'Nov 2025 – Dec 2025',
-    type: 'Internship',
-    bullets: [
-      'Worked in Python using various modules and libraries.',
-      'Explored BeautifulSoup and Requests for web automation and scraping.',
-      'Built practical Python applications including a To-Do List and Data Scraper.',
+      ' Implemented a reading progress indicator for story detail pages and a clipboard-based sharing feature, improving content navigation and sharing UX in an open-source web application',
+      'Improved frontend accessibility in the GSoC organization finder by adding descriptive ARIA labels to search and filtering controls.',
     ],
   },
 ];
@@ -32,7 +20,6 @@ export default function Experience() {
       <div className="section-heading">
         <div className="section-heading-left">
           <p className="section-label">03 — Experience</p>
-          <h2 className="section-title">Where I've <em>Worked</em></h2>
         </div>
         <div className="section-line" />
       </div>

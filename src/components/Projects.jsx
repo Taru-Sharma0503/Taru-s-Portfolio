@@ -5,52 +5,36 @@ import "./Projects.css";
 const projects = [
   {
     number: "01",
-    title: "StudyMate",
-    subtitle: "AI Student Companion Website",
+    title: "AI Legal & Citizen Service Assistant",
+    subtitle: "Team Project",
     description:
-      "Developed a responsive student productivity web application using React, designed to streamline academic workflows. Implemented features like task management, AI assisstant, and resource organization with a focus on intuitive UI/UX.",
-    stack: ["React","Node.js", "Express.js", "MongoDB","JWT","Gemini API"],
+      "AI-powered citizen-service platform providing regional-language legal guidance, verified-source answers using RAG, smart document checklists, government service discovery, application tracking, and human escalation for complex cases.",
+    stack: ["React","Node.js", "Express.js", "Redis","JWT","Gemini API"],
     highlights: [
-      "Engineered a full-stack study management web application with complete CRUD functionality for notes and tasks, using React on the frontend and Node.js/Express.js/MongoDB on the backend.",
-      "Implemented secure JWT-based authentication and protected routes to safeguard user data and restrict unauthorized access.",
-      "Integrated Google’s Gemini API to build an AI-powered study assistant that answers academic queries in real time",
-      "Added file upload support and deployed the application in production, hosting the frontend on Vercel and the backend on Render."
+      "Built a full-stack AI legal assistance platform integrating Google Gemini API and 35+ REST API endpoints, supporting legal queries, document checklists, office discovery, application tracking, and human-agent escalation.",
+      "Developed a responsive React.js and Tailwind CSS frontend featuring AI chat, service directory, document checklists, office finder, application tracking, and human-escalation case threads.",
+      "Designed REST APIs using Node.js and Express.js with JWT authentication, bcrypt password hashing, and role-based access control for Citizen, Agent, and Admin users."
     ],
     accent: "#4ade80",
-    icon: "🍽",
-    projectLink: "https://studymate-umber-eta.vercel.app/",
+    icon: "🤖",
+    projectLink: "https://ai-legal-assisstant-frontend.vercel.app/",
   },
   {
     number: "02",
-    title: "Flavour Loft",
-    subtitle: "Fictional Restaurant Website",
+    title: "StudyMate",
+    subtitle: "AI Powered Student Companion",
     description:
-      "A fully responsive website for an imaginary restaurant, featuring an introduction section, detailed menu, online reservation system, and a contact page. Designed with a focus on user experience and clean layout.",
-    stack: ["HTML", "CSS", "JavaScript"],
+      "Developed a responsive student productivity web application using React, designed to streamline academic workflows. Implemented features like task management, AI assisstant, and resource organization with a focus on intuitive UI/UX.",
+    stack: ["React", "Node.js", " Express.js", "MongoDB", "JWT", "Gemini API"],
     highlights: [
-      "Fully responsive across all devices",
-      "Interactive online reservation flow",
-      "Multi-page architecture with smooth navigation",
+      " Architected a full-stack study management platform using React and Node.js, implementing efficient CRUD operations andMongoDB indexing to support sub-200ms query latency.",
+      "Hardened application security by implementing JWT-based authentication and route protection, preventing unauthorized access to user-specific study data.",
+      "Integrated Google Gemini API to provide real-time academic assistance, implementing robust error handling and prompt engineering to ensure 95% response accuracy.",
+      "Added file upload support and deployed the application in production, hosting the frontend on Vercel and the backend on Render.",
     ],
     accent: "#c8a96e",
     icon: "🍽",
-    projectLink: "https://taru-sharma0503.github.io/Restaurant-Webpage-Design/",
-  },
-  {
-   number: "03",
-    title: "Weather API Integration",
-    subtitle: "Real-Time Weather Web App",
-    description:
-      "A responsive weather application that fetches real-time city-based weather data including temperature, humidity, pressure, and conditions. Features dynamic UI updates and smooth transitions powered by a third-party REST API.",
-    stack: ["HTML", "CSS", "JavaScript", "REST API", "JSON"],
-    highlights: [
-      "Integrated third-party REST API with JSON parsing",
-      "Dynamic UI updates with smooth transitions",
-      "Displays temperature, humidity, pressure & conditions",
-    ],
-    accent: "#7c6bff",
-    icon: "🌤",
-    projectLink: "https://taru-sharma0503.github.io/API-Integration/",
+    projectLink: "https://studymate-umber-eta.vercel.app/",
   },
 ];
 

@@ -20,8 +20,7 @@ const skillGroups = [
     icon: "</>",
     skills: [
       { name: "React", level: 75 },
-      { name: "Responsive Web Design", level: 90 },
-      { name: "DOM Manipulation", level: 85 },
+      { name: "Tailwind CSS", level: 90 },
     ],
   },
   {
@@ -32,18 +31,27 @@ const skillGroups = [
       { name: "Express", level: 80 },
       { name: "MongoDB", level: 75 },
       { name: "JWT Authentication", level: 90 },
+      { name: "bcrypt", level: 95 },
+      { name: "Redis(Caching)", level: 70 },
     ],
   },
   {
-    category: "Tools & CS",
+    category: "Tools & Platforms",
     icon: "◈",
     skills: [
       { name: "Git / GitHub", level: 85 },
       { name: "VS Code", level: 90 },
       { name: "Vercel", level: 90 },
       { name: "Render", level: 90 },
-      { name: "OOP", level: 80 },
-      { name: "DSA", level: 70 },
+      { name: "Postman", level: 80 },
+    ],
+  },
+  {
+    category: "Core CS",
+    icon: "◈",
+    skills: [
+      { name: "Data Structures and Algorithms", level: 85 },
+      { name: "Object Oriented Programming", level: 90 },
     ],
   },
 ];

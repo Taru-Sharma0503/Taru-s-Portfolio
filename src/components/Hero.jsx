@@ -56,7 +56,7 @@ export default function Hero() {
 
         {/* Tags */}
         <div className="hero-tags">
-          {['Python', 'Web Dev', 'Problem Solver', 'KIET Ghaziabad'].map((tag, i) => (
+          {['Java', 'Web Dev', 'Problem Solver', 'KIET Ghaziabad'].map((tag, i) => (
             <span
               key={tag}
               className="tag"
